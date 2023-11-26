@@ -9,14 +9,12 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-width: 767px) {
-  body {
-    background-attachment: scroll;
-    background-position: center;
-  }
+@font-face {
+  font-family: 'Good Times';
+  src: url('https://www.1001fonts.com/download/good-times.zip');
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+body {
+  font-family: 'Good Times', sans-serif;
+  text-align: center;
 }
