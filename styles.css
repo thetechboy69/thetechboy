@@ -5,6 +5,8 @@ body {
   background-attachment: fixed;
   height: 100%;
   overflow-y: hidden;
+  font-family: 'Good Times', sans-serif;
+  text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
@@ -12,4 +14,9 @@ body {
     background-attachment: scroll;
     background-position: center;
   }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
