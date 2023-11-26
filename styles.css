@@ -9,7 +9,7 @@ body {
 }
 
 @font-face {
-  font-family: 'MyFont';
+  font-family: 'font';
   src: url('font.otf') format('opentype');
 }
 
