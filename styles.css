@@ -9,10 +9,10 @@ body {
 }
 
 @font-face {
-  font-family: 'font';
-  src: url('font.otf') format('opentype');
+  font-family: 'Good Times';
+  src: url('https://www.1001fonts.com/download/good-times.zip');
 }
 
 body {
-  font-family: 'font', sans-serif;
+  font-family: 'Good Times', sans-serif;
 }
