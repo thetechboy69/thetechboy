@@ -23,7 +23,6 @@ nav a {
   padding: 10px;
 }
 
-.ewaste {
-  color: white;
-  font-family: inherit; /* This will make the font the same as the rest of your text */
+p {
+  font-family: sans-serif;
 }
