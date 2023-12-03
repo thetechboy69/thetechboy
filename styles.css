@@ -7,12 +7,3 @@ body {
   overflow-y: hidden;
   text-align: center;
 }
-
-@font-face {
-  font-family: 'Good Times';
-  src: local('goodtimesfont.otf');
-}
-
-body {
-  font-family: 'Good Times', sans-serif;
-}
