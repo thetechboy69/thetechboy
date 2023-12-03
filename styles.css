@@ -6,4 +6,19 @@ body {
   height: 100%;
   overflow-y: hidden;
   text-align: center;
+  color: white;
+}
+
+a {
+  color: lightblue;
+}
+
+.footer {
+  margin-top: 20px;
+  font-style: italic;
+  color: lightblue;
+}
+
+nav a {
+  padding: 10px;
 }
