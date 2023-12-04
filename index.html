@@ -27,9 +27,14 @@
         <p class="ewaste">The Hall of E-Waste</p>
         <button class="ewaste-button" onclick="location.href='https://imomobile.co.uk';" title="Click if you wanna see E-Waste">This is the button of E-Waste</button>
     </footer>
-    <div id="easter-egg" onclick="showEasterEgg()" style="position: absolute; top: 0; right: 0; width: 50px; height: 50px;"></div>
+    <div id="easter-egg" onclick="showEasterEgg()" style="position: absolute; top: 0; right: 0; width: 50%; height: 50%;"></div>
     <div id="easter-egg-message" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; color: white; text-align: center; padding-top: 50%;">
         You found the easter egg. Make a ticket on the server buddy.
     </div>
+    <script>
+    function showEasterEgg() {
+        document.getElementById('easter-egg-message').style.display = 'block';
+    }
+    </script>
 </body>
 </html>
