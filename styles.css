@@ -40,20 +40,25 @@ body {
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #4CAF50;
+  background: linear-gradient(to right, #673AB7, #512DA8);
   border: none;
-  border-radius: 15px;
+  border-radius: 25px;
   box-shadow: 0 9px #999;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .ewaste-button:hover {
-  background-color: #3e8e41;
+  background: linear-gradient(to right, #512DA8, #673AB7);
   box-shadow: 0 6px #666;
 }
 
 .ewaste-button:active {
-  background-color: #3e8e41;
+  background: linear-gradient(to right, #512DA8, #673AB7);
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.ewaste-button:after {
+  content: "→";
+  padding-left: 10px;
 }
