@@ -1,7 +1,7 @@
 # TTB's Website
-my website which you can see at thetechboy.net 💯💯💯
+my website which you can see at https://thetechboy.net 💯💯💯
 
 # Thanks to:
-thetechboy, for.. well making the actual website
+TheTechBoy, for.. well making the actual website
 
-szymcioya for adding stuff to the website and helping with getting github working 
+SzymcioYa for adding stuff to the website and helping with getting github working 
