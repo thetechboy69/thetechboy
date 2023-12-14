@@ -3,6 +3,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 header {
