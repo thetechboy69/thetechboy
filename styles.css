@@ -28,6 +28,14 @@ header {
     flex-direction: column;
 }
 
+.sbcontainer {
+
+}
+#darkmodebtn {
+padding-left: 75%;
+}
+
+
 h1 {
     margin: 0;
     font-size: 2rem;
@@ -48,6 +56,18 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
 }
+.darkmode {
+    background-color: #2A2B39;
+    color: #ececec;
+}
+.amoledmode {
+    background-color: black;
+    color: #FCFCFC;
+}
+.amoledmode-header {
+    background-color: #13204d;
+}
+
 
 h2 {
     font-size: 2.5rem;
@@ -60,15 +80,26 @@ h2 {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    margin: 0 5px; 
+    margin: 0 5px;
     background-color: #0e4e79;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
+
+.darkmodetoggle {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10 5px;
+    background-color: #ffffff;
+    color: black;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
 .button:hover {
-    filter: brightness(90%); 
+    filter: brightness(90%);
 }
 
 .button::before {
@@ -85,14 +116,14 @@ h2 {
 }
 
 .button:nth-child(1) {
-    background: linear-gradient(135deg, #cc121c, #007acc); 
+    background: linear-gradient(135deg, #cc121c, #007acc);
     color: white;
-   
+
 }
 
 
 .button:nth-child(2) {
-     background: linear-gradient(135deg, #cc121c, #530202); 
+     background: linear-gradient(135deg, #cc121c, #530202);
      color: white;
 }
 
@@ -102,10 +133,10 @@ h2 {
 }
 
 .footer-text {
-    font-size: 0.8rem; 
-    margin-top: 15px; 
-    text-align: center; 
-    color: #777; 
+    font-size: 0.8rem;
+    margin-top: 15px;
+    text-align: center;
+    color: #777;
 }
 
 
@@ -115,7 +146,7 @@ h2 {
     transform: translateX(-50%);
     margin-top: 20px;
     padding: 8px 16px;
-    background-color: #4CAF50; 
+    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
@@ -130,7 +161,7 @@ h2 {
 }
 .made-with-text {
     text-align: center;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .avatar-image {
@@ -150,5 +181,5 @@ h2 {
 
 .content {
     position: relative;
-    padding-bottom: 60px; 
+    padding-bottom: 60px;
 }
