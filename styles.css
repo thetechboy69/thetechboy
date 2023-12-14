@@ -101,6 +101,16 @@ h2 {
      color: white;
 }
 
+.button:nth-child(4) {
+    background: linear-gradient(135deg, #cc121c, #007acc); 
+    color: white;
+}
+
+.button:nth-child(5) {
+    background: linear-gradient(135deg, #cc121c, #530202); 
+    color: white;
+}
+
 .footer-text {
     font-size: 0.8rem; 
     margin-top: 15px; 
