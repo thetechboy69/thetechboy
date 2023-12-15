@@ -49,8 +49,8 @@ p {
     margin: auto;
     text-align: center;
     color: #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.5); /* This line makes the content area semi-transparent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.19); /* This line adds a glossy effect */
+    background-color: rgba(255, 255, 255, 0.7); /* This line makes the content area more semi-transparent */
 }
 
 h2 {
