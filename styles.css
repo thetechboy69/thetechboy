@@ -15,21 +15,35 @@ header {
     color: white;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #profile-image {
     width: 60px;
     height: 60px;
-    margin-right: 15px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin-right: 15px;
 }
 
 #header-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+#header-text h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+#header-text p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.9;
 }
 
 h1 {
@@ -50,7 +64,7 @@ p {
     text-align: center;
     color: #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.8); /* This line makes the content area more semi-transparent */
+    background-color: rgba(255, 255, 255, 0.8); 
 }
 
 h2 {
@@ -62,57 +76,58 @@ h2 {
     text-align: center;
 }
 
+
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 0 5px; 
-    background-color: #0e4e79;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px; 
+    margin: 0 5px;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 4px; 
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    font-weight: bold;
+    font-size: 0.85em; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.button i {
+    margin-right: 6px;
+    font-size: 1.2em; 
 }
 
 .button:hover {
-    filter: brightness(90%); 
+    transform: translateY(-1px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.button::before {
-    content: '\200B';
-    margin-right: 10px;
-}
-
-.button::after {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-size: cover;
-}
-
-.button:nth-child(1) {
-    background: linear-gradient(135deg, #cc121c, #007acc); 
+.tiktok {
+    background-color: #000;
     color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 0 3px transparent; 
 }
 
-.button:nth-child(2) {
-    background: linear-gradient(135deg, #cc121c, #530202); 
-    color: white;
+
+.youtube {
+    background-color: #FF0000;
 }
 
-.button:nth-child(3) {
-    background: linear-gradient(135deg, #1f78ee, #4812ad);
-    color: white;
+.discord {
+    background-color: #7289DA;
 }
 
-.button:nth-child(4) {
-    background: linear-gradient(135deg, #cc121c, #007acc); 
-    color: white;
+.e-waste {
+    background-color: #4CAF50;
 }
 
-.button:nth-child(5) {
-    background: linear-gradient(135deg, #800080, #e6e6fa); /* This line changes the gradient to purple */
-    color: white;
+.windows {
+    background-color: #0078D7;
 }
 
 .footer-text {
@@ -123,23 +138,41 @@ h2 {
 }
 
 .feedback-button {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 20px;
-    padding: 8px 16px;
-    background-color: #4CAF50; 
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: flex;
-    align-items: center;
+    background-color: #4CAF50;
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: all 0.3s ease;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: none; 
+    cursor: pointer; 
 }
 
 .feedback-button:hover {
-    background-color: #45a049;
+    background-color: #45a049; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+
+.feedback-button:active {
+    background-color: #3e8e41; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px); 
+}
+
+.feedback-button-container {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+
+.feedback-button i {
+    margin-right: 8px; 
 }
 
 .made-with-text {
@@ -166,4 +199,42 @@ h2 {
 .content {
     position: relative;
     padding-bottom: 60px; 
+}
+.roblox {
+    background-color: #F56B00;
+    color: white; 
+}
+
+.roblox:hover {
+    background-color: #d65a00;
+}
+
+.roblox:active {
+    transform: scale(0.95); 
+    background-color: #c55000;
+}
+
+.button.e-waste {
+    display: none;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+#profile-image {
+    cursor: pointer; 
+    transition: transform 0.1s ease;
+}
+
+
+#profile-image:active {
+    transform: scale(0.9);
 }
