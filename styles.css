@@ -238,3 +238,39 @@ h2 {
 #profile-image:active {
     transform: scale(0.9);
 }
+
+
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+#profile-image-container {
+    position: relative;
+    display: inline-block; 
+}
+
+
+#profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+#christmas-hat {
+    position: absolute;
+    top: -8px; 
+    left: 25px; 
+    width: 40px; 
+    height: auto; 
+}
