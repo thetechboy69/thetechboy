@@ -165,15 +165,15 @@ h2 {
 }
 
 .known-issue {
-    background-color: #fff3f3; 
-    border-left: 4px solid red; 
+    background-color: #fcf1a7; 
+    border-left: 4px solid yellow; 
     padding: 10px;
     margin: 20px auto 10px;
     
 }
 
 .known-issue-title {
-    color: red;
+    color: yellow;
     font-weight: bold;
     margin: 0 0 5px 0;
 }
