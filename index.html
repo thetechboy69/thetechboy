@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-         
+
         <div id="profile-image-container">
     <img id="profile-image" src="https://yt3.googleusercontent.com/pKqmcHFTRSaX3MtDagPpxkH7jo7A5pk7C1PKKhLBSM_61Zqjj7-Yux5f_RvavBzBYOsafQukeg=s176-c-k-c0x00ffffff-no-rj" alt="Profile Image">
     <img id="christmas-hat" src="https://www.freeiconspng.com/thumbs/christmas-hat-png/christmas-hat-png-15.png" alt="Christmas Hat">
@@ -27,7 +27,7 @@
     </a>
     </header>
 
-    
+
 
 <div class="content">
     <div class="known-issue">
@@ -56,13 +56,16 @@
         <a href="https://pastebin.com/raw/ra8LNR0r" class="button windows" target="_blank">
             <i class="fab fa-windows"></i> Windows Activation
         </a>
+        <a href="https://pastebin.com/raw/ra8LNR0r" class="button pfptimeline" target="_blank">
+            <i class="fa-solid fa-user"></i> PFP Timeline
+        </a>
     </div>
 
-     
 
-        
+
+
         <div class="made-with-text">
-            <p>Made with ❤ by <img src="https://yt3.googleusercontent.com/pKqmcHFTRSaX3MtDagPpxkH7jo7A5pk7C1PKKhLBSM_61Zqjj7-Yux5f_RvavBzBYOsafQukeg=s176-c-k-c0x00ffffff-no-rj" alt="ttb" class="avatar-image"> TTB and <img src="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-euttp/f2828f9dcf57decd6335fe139bbb3b6b~c5_100x100.jpeg?lk3s=a5d48078&x-expires=1703840400&x-signature=ZSJ9bRNPFU5%2B%2FOTyE8AzSWSMqtQ%3D" alt="szymcioya" class="avatar-image"> SzymcioYa</p>
+            <p>Made with ❤ by <img src="https://yt3.googleusercontent.com/pKqmcHFTRSaX3MtDagPpxkH7jo7A5pk7C1PKKhLBSM_61Zqjj7-Yux5f_RvavBzBYOsafQukeg=s176-c-k-c0x00ffffff-no-rj" alt="ttb" class="avatar-image"> TTB and <img src="https://i.imgur.com/Er2YSkp.jpg" alt="szymcioya" class="avatar-image"> SzymcioYa</p>
         </div>
 
         <div class="feedback-button-container">
@@ -76,32 +79,35 @@
         </p>
 </div>
     </div>
-        
+
     </div>
-  
 
-    
 
-    
+
+
+
 
 <<script>
-    var profileImageClickCount = 0; 
+    var profileImageClickCount = 0;
 
-   
+
     function handleProfileImageClick() {
-        profileImageClickCount++; 
-        if (profileImageClickCount === 5) { 
-            revealEasterEggButton(); 
+        profileImageClickCount++;
+        if (profileImageClickCount === 5) {
+            revealEasterEggButton();
+        }
+        if (profileImageClickCount === 10) {
+            hideEasterEggButton();
         }
     }
 
     function revealEasterEggButton() {
         var eWasteButton = document.querySelector('.button.e-waste');
-        eWasteButton.style.display = 'inline-block'; 
-        eWasteButton.style.animation = 'fadeIn 1s ease-in-out forwards'; 
+        eWasteButton.style.display = 'inline-block';
+        eWasteButton.style.animation = 'fadeIn 1s ease-in-out forwards';
     }
 
-   
+
     document.addEventListener('DOMContentLoaded', function () {
         var profileImage = document.getElementById('profile-image');
         profileImage.addEventListener('click', function () {
