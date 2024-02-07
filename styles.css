@@ -167,6 +167,9 @@ h2 {
 .windows {
     background-color: #0078D7;
 }
+.devices {
+    background-color: rgb(85, 0, 243);
+}
 .pfptimeline {
     background-color: rgb(228, 116, 12)
 }
