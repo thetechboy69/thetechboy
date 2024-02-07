@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>watch gen alpha brainrot here!1!1!</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    
+
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -56,6 +56,14 @@
             Your browser does not support the video tag.
         </video>
     </div>
-
+<script>
+// Changes user's zoom if their screen is in landscape (Does not work on Firefox for security reasons)
+function setZoom() {
+  if (window.matchMedia && window.matchMedia("(orientation: landscape)").matches && document.body) {
+    document.body.style.zoom = "60%";
+  }
+}
+document.addEventListener("DOMContentLoaded", setZoom);
+</script>
 </body>
 </html>
