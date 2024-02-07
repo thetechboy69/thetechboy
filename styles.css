@@ -159,6 +159,10 @@ h2 {
 .e-waste {
     background-color: #4CAF50;
 }
+.brainrot {
+    background-color: #e43535;
+
+}
 
 .windows {
     background-color: #0078D7;
@@ -275,11 +279,14 @@ h2 {
     display: none;
     animation: fadeIn 1s ease-in-out forwards;
     background: linear-gradient(45deg, #4CAF50, #8BC34A);
-    border: 1px solid #3E7E41;
     color: white;
     position: relative;
     overflow: hidden;
     transition: box-shadow 0.3s, transform 0.2s;
+
+}
+.button.brainrot{
+    display: none;
 }
 .button.e-waste:hover {
     box-shadow: 0 0 15px #8BC34A;
@@ -384,5 +391,5 @@ h2 {
     }
 
 }
- 
-    
+
+

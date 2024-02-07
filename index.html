@@ -67,6 +67,9 @@
         <a href="https://imomobile.co.uk" class="button e-waste" target="_blank">
             <i class="fas fa-recycle"></i> Hall of E-Waste
         </a>
+        <a href="https://imomobile.co.uk" class="button brainrot" target="_blank">
+            <i class="fa-solid fa-child"></i> Gen αlpha brainrot
+        </a>
         <a href="https://pastebin.com/raw/ra8LNR0r" class="button windows" target="_blank">
             <i class="fab fa-windows"></i> Windows Activation
         </a>
@@ -93,15 +96,9 @@
         </p>
 </div>
     </div>
-
     </div>
 
-
-
-
-
-
-<<script>
+<script>
     var profileImageClickCount = 0;
 
 
@@ -109,18 +106,34 @@
         profileImageClickCount++;
         if (profileImageClickCount === 10) {
             revealEasterEggButton();
+            revealBrainrot();
         }
         if (profileImageClickCount === 15) {
+            saveUsFromBrainrot();
             hideEasterEggButton();
         }
     }
 
     function revealEasterEggButton() {
         var eWasteButton = document.querySelector('.button.e-waste');
-        eWasteButton.style.display = 'inline-block';
-        eWasteButton.style.animation = 'fadeIn 1s ease-in-out forwards';
+        eWasteButton.style.display = 'inline-flex';
+        eWasteButton.style.animation = 'fadeIn 0.4s ease-in-out forwards';
+    }
+    function revealBrainrot() {
+        var brainrot = document.querySelector('.button.brainrot');
+        brainrot.style.display = "inline-flex";
+        brainrot.style.animation = 'fadeIn 0.4s ease-in-out forwards'
+    }
+    function saveUsFromBrainrot(){
+        var brainrot = document.querySelector('.button.brainrot');
+        brainrot.style.display = 'none'
     }
 
+
+    function hideEasterEggButton() {
+        var eWasteButton = document.querySelector('.button.e-waste');
+        eWasteButton.style.display = "none"
+    }
 
     document.addEventListener('DOMContentLoaded', function () {
         var profileImage = document.getElementById('profile-image');
