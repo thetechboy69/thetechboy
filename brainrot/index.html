@@ -57,13 +57,13 @@
         </video>
     </div>
 <script>
-// Changes user's zoom if their screen is in landscape (Does not work on Firefox for security reasons)
-function setZoom() {
-  if (window.matchMedia && window.matchMedia("(orientation: landscape)").matches && document.body) {
-    document.body.style.zoom = "60%";
-  }
-}
-document.addEventListener("DOMContentLoaded", setZoom);
+    // Changes user's zoom if their screen is in landscape (Does not work on Firefox for security reasons)
+    function setZoom() {
+        if (window.matchMedia && window.matchMedia("(orientation: landscape)").matches && document.body) {
+        document.body.style.zoom = "60%";
+    }
+    }
+    document.addEventListener("DOMContentLoaded", setZoom);
 </script>
 </body>
 </html>
