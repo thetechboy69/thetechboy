@@ -81,7 +81,7 @@ p {
 .content {
     padding: 20px;
     max-width: 800px;
-    max-height: 500px;
+    max-height: 575px;
     margin: auto;
     text-align: center;
     color: #333;
@@ -365,7 +365,6 @@ h2 {
 
 .contact-button {
     padding: 10px 15px;
-
     background-color: #4CAF50;
     color: white;
     text-decoration: none;
