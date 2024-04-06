@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'GoogleFont';
-    src: url('assets/website/google.ttf') format('truetype');
+    src: url('../../assets/website/google.ttf') format('truetype');
 }
 
 body {
@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #323232;
-    background-image: url('assets/website/bg.jpg');
+    background-image: url('../../assets/website/bg.jpg');
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-size: cover;
@@ -365,7 +365,6 @@ h2 {
 
 .contact-button {
     padding: 10px 15px;
-
     background-color: #4CAF50;
     color: white;
     text-decoration: none;

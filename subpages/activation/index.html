@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFP Timeline</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'GoogleFont';
+            src: url('../../assets/website/google.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'GoogleFont';
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark grey background */
+            color: #dee2e6; /* Light grey text */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .content {
+            max-width: 1000px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.1); /* Light grey background with transparency */
+            border-radius: 20px;
+            padding: 50px;
+            margin: 20px;
+        }
+
+        .tutorial {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .tutorial-description {
+            text-align: center;
+        }
+
+        .step1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+        }
+
+        .step2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+        }
+
+        .step3 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+        }
+
+        .windows {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <img src="../../assets/website/windows.png" width="64" height="64" class="windows">
+        <h2>Windows Activation</h2>
+        <div class="tutorial">
+            <p class="tutorial-description">This process works on Windows 8.1/10/11.</p>
+            <h3>Step 1: Open Windows Terminal/Powershell</h3>
+            <p>Right click in the start icon (next to the search icon) and click on Powershell or Terminal.</p>
+            <img src="../../assets/website/step1.png" width="521" height="330" class="step1">
+            <h3>Step 2: Copy and paste this code and press enter</h3>
+            <h4>irm https://massgrave.dev/get | iex</h4>
+            <img src="../../assets/website/step2.png" class="step2">
+            <h3>Step 3: Follow the on-screen instructions</h3>
+            <img src="../../assets/website/step3.png" width="407" height="341" class="step3">
+            <p>If you did everything correctly, you're done!</p>
+
+        </div>
+
+</body>
+</html>
