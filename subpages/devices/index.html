@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>device collection omagad</title>
+    <title>Device Collection</title>
     <style>
+        @font-face {
+            font-family: 'GoogleFont';
+            src: url('../../assets/website/google.ttf') format('truetype');
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'GoogleFont';
             margin: 20px;
-            background-color: #f8f9fa;
-            color: #495057;
+            background-color: #121212;
+            color: #f0f0f0
         }
 
         h2, h3 {
-            color: #343a40;
+            color: #f0f0f0;
         }
 
         .content-area {
@@ -21,8 +26,9 @@
             margin: 0 auto;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            background-color: #2a2a2a;
+            color: #f0f0f0;
             padding: 20px;
         }
 
@@ -32,25 +38,22 @@
             margin-top: 20px;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
         }
 
         th, td {
-            border: 1px solid #dee2e6;
+            border: 1px solid #363636;
             padding: 12px;
             text-align: left;
         }
 
         th {
-            background-color: #f2f2f2;
+            background-color: #3a3a3a;
+            color: #f0f0f0;
         }
 
         tr:nth-child(even) {
-            background-color: #f8f9fa;
-        }
-
-        tr:hover {
-            background-color: #e2e6ea;
+            background-color: #2a2a2a;
         }
 
         td.yes {
@@ -60,18 +63,17 @@
         td.no {
             color: #dc3545;
         }
-        .description {
-            
-            margin-top: 10px;
-            color: #6c757d;
-        }
 
+        .description {
+            margin-top: 10px;
+            color: #c0c0c0;
+        }
     </style>
 </head>
 <body>
 
     <div class="content-area">
-        <h2>omagad device collection!11!</h2>
+        <h2>Device Collection</h2>
         <p class="description">As soon as I get a new device, I'll put it on this website.</p>
         <h3>iPhone:</h3>
         <table>
@@ -92,7 +94,7 @@
                     <td>Won't activate, broken digitizer</td>
                     <td class="no">No</td>
                     <td class="yes">Yes</td>
-                    <td>In possesion</td>
+                    <td>In possession</td>
                 </tr>
                 <tr>
                     <td>iPhone 4</td>
@@ -217,7 +219,7 @@
                     <th>OS</th>
                     <th>Condition</th>
                     <th>Jailbroken</th>
-                    <th>Power On</th>
+                    <th>Powers On?</th>
                     <th>Status</th>
                 </tr>
             </thead>
@@ -265,7 +267,7 @@
                     <th>OS</th>
                     <th>Condition</th>
                     <th>Rooted</th>
-                    <th>Power On</th>
+                    <th>Powers On?</th>
                     <th>Status</th>
                 </tr>
             </thead>

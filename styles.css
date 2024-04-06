@@ -1,9 +1,14 @@
+@font-face {
+    font-family: 'GoogleFont';
+    src: url('assets/website/google.ttf') format('truetype');
+}
+
 body {
-    font-family: 'Roboto';
+    font-family: 'GoogleFont';
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
-    background-image: url('background.jpg');
+    background-color: #323232;
+    background-image: url('assets/website/bg.jpg');
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-size: cover;
@@ -33,7 +38,7 @@ header {
 }
 
 header {
-    background-color: rgba(44, 62, 80, 0.95);
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 15px 10px;
     color: white;
     display: flex;
