@@ -1,9 +1,14 @@
+@font-face {
+    font-family: 'GoogleFont';
+    src: url('../../assets/website/google.ttf') format('truetype');
+}
+
 body {
-    font-family: 'Roboto';
+    font-family: 'GoogleFont';
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
-    background-image: url('background.jpg');
+    background-image: url('../../assets/website/bg.jpg');
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-size: cover;
@@ -164,6 +169,14 @@ h2 {
     background-color: #0078D7;
 }
 
+.devices {
+    background-color: rgb(85, 0, 243);
+}
+
+.pfptimeline {
+    background-color: rgb(228, 116, 12)
+}
+
 .known-issue {
     background-color: #fcf1a7;
     border-left: 4px solid yellow;
@@ -252,7 +265,7 @@ h2 {
 .content {
     position: relative;
     padding-bottom: 60px;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 .roblox {
     background-color: #F56B00;
@@ -287,9 +300,6 @@ h2 {
     transform: scale(0.95);
     opacity: 0.8;
     box-shadow: 0 0 5px #8BC34A;
-}
-.button.pfptimeline {
-    background-color: rgb(228, 116, 12)
 }
 
 
