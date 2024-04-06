@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'GoogleFont';
-    src: url('assets/website/google.ttf') format('truetype');
+    src: url('../../assets/website/google.ttf') format('truetype');
 }
 
 body {
@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #323232;
-    background-image: url('assets/website/bg.jpg');
+    background-image: url('../../assets/website/bg.jpg');
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-size: cover;
@@ -81,7 +81,7 @@ p {
 .content {
     padding: 20px;
     max-width: 800px;
-    max-height: 575px;
+    max-height: 500px;
     margin: auto;
     text-align: center;
     color: #333;
