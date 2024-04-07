@@ -6,9 +6,15 @@
 Repo for TTB's Official Website. You can access it [here](https://thetechboy.net).
 
 ## TODO
-- [ ] Fix CSS Styles (now it's a giant mess).
-- [ ] Improve mobile optimization.
-- [x] Tidy project structure.
+🟥 Really necessary
+🟨 Necessary
+🟩 We can live without it
+
+- [ ] 🟨 Fix CSS Styles (WIP).
+- [ ] 🟥 Improve mobile optimization (WIP).
+- [ ] 🟩 Spanish translation (WIP).
+- [x] 🟨 Dark Mode (finally 😭)
+- [x] 🟨 Tidy project structure.
 
 This list is NOT final and may vary.
 
