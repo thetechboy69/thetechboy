@@ -13,6 +13,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/website/icon.png" type="image/png">
+    <script>
+        window.onload = function () {
+            var userLang = navigator.language || navigator.userLanguage;
+            if (userLang.toLowerCase().startsWith('fr-')) {
+                window.location.href = "/lang/fr"
+            }
+            if (userLang.toLowerCase().startsWith("de-")) {
+                window.location.href = "/lang/de"
+            }
+            if (userLang.toLowerCase().startsWith("ro-")) {
+                window.location.href = "/lang/ro"
+            }
+            if (userLang.toLowerCase().startsWith("es-")) {
+                window.location.href = "/lang/es"
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -63,8 +80,6 @@
     </div>
     <script>
         var profileImageClickCount = 0;
-
-
         function handleProfileImageClick() {
             profileImageClickCount++;
             if (profileImageClickCount === 10) {
