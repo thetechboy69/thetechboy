@@ -62,6 +62,19 @@
         </p>
     </div>
     <script>
+        function redirectIfMobile() {
+            const isAndroid = /Android/i.test(navigator.userAgent);
+            const isiOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+            if (isAndroid || isiOS) {
+                const mobileURL = "index_mobile.html";
+
+                window.location.href = mobileURL;
+            }
+        }
+
+        redirectIfMobile();
+
         function language() {
             return navigator.language || navigator.userLanguage;
         }
