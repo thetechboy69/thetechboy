@@ -11,7 +11,7 @@ Repo for TTB's Official Website. You can access it [here](https://thetechboy.net
 🟩 We can live without it
 
 - [ ] 🟨 Fix CSS Styles (WIP).
-- [ ] 🟥 Improve mobile optimization (WIP).
+- [x] 🟥 Improve mobile optimization (WIP).
 - [x] 🟩 Spanish translation
 - [x] 🟨 Dark Mode (finally 😭)
 - [x] 🟨 Tidy project structure.
