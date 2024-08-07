@@ -4,15 +4,22 @@
     box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background: url('https://thetechboy.net/assets/website/bg.jpg') no-repeat center center/cover;
+    background: url('/assets/website/bg.jpg') no-repeat center center/cover;
     color: #ffffff;
     line-height: 1.6;
     height: 100vh;
     background-attachment: fixed;
 }
 
+a {
+    text-decoration: none;
+  }
 header {
     background: rgba(0, 0, 0, 0.7);
     padding: 1rem 2rem;
@@ -71,7 +78,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    height: 60vh;
+    height: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
