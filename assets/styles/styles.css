@@ -13,6 +13,10 @@ body {
     background-attachment: fixed;
 }
 
+a {
+    text-decoration: none;
+  }
+
 header {
     background: rgba(0, 0, 0, 0.7);
     padding: 1rem 2rem;
@@ -71,7 +75,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    height: 60vh;
+    height: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
