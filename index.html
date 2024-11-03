@@ -2,74 +2,129 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>TTB's website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TTB's Website</title>
-    <link rel="stylesheet" href="/assets/styles/styles.css">
-    <link rel="icon" href="assets/website/icon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="https://thetechboy.net/"><img src="assets/pfp/ttbminimalismgold.png" alt="TTB"></a>
-            <span>TTB</span>
+    <div class="background-circle"></div>
+    <div class="loading-overlay">
+        <h1>Downloading assets...</h1>
+        <p>This won't take long. You'll probably only see this screen if this is your first visit or if you recently cleared your browser cache.</p>
+    </div>
+    <div class="content">
+        <div class="container">
+            <img src="https://files.catbox.moe/27a2q0.png" alt="Cube" class="cube">
+            <div class="ttb-text">TTB</div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="/subpages/credits/index.html">Credits</a></li>
-                <li><a href="/subpages/projects/index.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Hi there!</h1>
-            <p>I'm The Tech Boy, shortened for TTB. I love to make tech content and to experiment with phones, computers, and other stupid tech things.</p>
-            <a href="#contactme" class="btn">My Links</a>
-            <div class="small-text">Press the button to view my Discord and more</div>
+        <div class="subtitle">
+            <span>Professional idiot, content creator,</span>
+            <span>programmer and supposed <i class="fab fa-apple"></i> glazer</span>
         </div>
-    </section>
-
-    <section class="social-links" id="links">
-        <h2>Check out my other socials:</h2>
-        <div class="links-grid">
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@thetechboy_" target="_blank">
+                <i class="fab fa-tiktok"></i>
+                <span>TikTok</span>
+            </a>
+            <a href="https://www.youtube.com/TheTechBoyReal" target="_blank">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+            </a>
+            <a href="https://discord.gg/dH56KN4HZ5" target="_blank">
+                <i class="fab fa-discord"></i>
+                <span>Discord</span>
+            </a>
             <a href="mailto:ttb@thetechboy.net">
-                <div class="link-card">
-                    <div class="link-icon"><img src="/assets/website/email.png" alt="Roblox"></div>
-                    <h3 class="link-title">E-Mail</h3>
-                </div>
-            </a>
-            <a href="https://tiktok.com/@thetechboy_">
-                <div id="contactme" class="link-card">
-                    <div class="link-icon"><img src="/assets/website/tiktok.png" alt="TikTok"></div>
-                    <h3 class="link-title">TikTok</h3>
-                </div>
-            </a>
-            <a href="https://discord.gg/dH56KN4HZ5">
-                <div class="link-card">
-                    <div class="link-icon"><img src="/assets/website/discord.png" alt="YouTube"></div>
-                    <h3 class="link-title">Discord</h3>
-                </div>
-            </a>
-            <a href="https://youtube.com/@TheTechBoyReal">
-                <div class="link-card">
-                    <div class="link-icon"><img src="/assets/website/youtube.png" alt="YouTube"></div>
-                    <h3 class="link-title">YouTube</h3>
-                </div>
-            </a>
-            <a href="https://www.roblox.com/groups/33535480/TTBs-Basement#!/about">
-                <div class="link-card">
-                    <div class="link-icon"><img src="/assets/website/roblox.webp" alt="Roblox"></div>
-                    <h3 class="link-title">Roblox</h3>
-                </div>
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
             </a>
         </div>
-    </section>
+    </div>
+    <div class="footer">
+        © TTB, 2024. Proudly created with hatred against Scamsung glazers. HyperOS sucks.
+    </div>
+    <script>
+        const loadingOverlay = document.querySelector('.loading-overlay');
+        const content = document.querySelector('.content');
+        const cubeImage = document.querySelector('.cube');
+        const ttbText = document.querySelector('.ttb-text');
+        const subtitle = document.querySelector('.subtitle');
+        const socialLinks = document.querySelector('.social-links');
+        const footer = document.querySelector('.footer');
+        const backgroundCircle = document.querySelector('.background-circle');
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 TTB. All rights reserved.</p>
-        </div>
-    </footer>
+        const animations = [cubeImage, ttbText, subtitle, socialLinks];
+        content.classList.add('blurred');
+
+        function initializeAnimations() {
+            loadingOverlay.classList.add('hidden');
+            setTimeout(() => {
+                content.classList.remove('blurred');
+                animations.forEach(el => {
+                    el.style.animationPlayState = 'running';
+                });
+                footer.style.animationPlayState = 'running';
+                setTimeout(() => {
+                    cubeImage.classList.add('shadow');
+                    document.body.classList.add('show-background');
+                }, 1300);
+            }, 500);
+        }
+
+        cubeImage.onload = initializeAnimations;
+        if (cubeImage.complete) {
+            initializeAnimations();
+        }
+        footer.style.animationPlayState = 'paused';
+
+        const particleCount = 150;
+        const particleElements = [];
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            particle.style.left = Math.random() * window.innerWidth + 'px';
+            particle.style.top = Math.random() * window.innerHeight + 'px';
+            document.body.appendChild(particle);
+            particleElements.push({
+                element: particle,
+                x: parseFloat(particle.style.left),
+                y: parseFloat(particle.style.top),
+                speedX: (Math.random() - 0.5) * 0.1,
+                speedY: (Math.random() - 0.5) * 0.1
+            });
+        }
+
+        let mouseX = window.innerWidth / 2;
+        let mouseY = window.innerHeight / 2;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function animateParticles() {
+            particleElements.forEach((particle) => {
+                particle.x += particle.speedX;
+                particle.y += particle.speedY;
+
+                if (particle.x > window.innerWidth) particle.x = 0;
+                if (particle.x < 0) particle.x = window.innerWidth;
+                if (particle.y > window.innerHeight) particle.y = 0;
+                if (particle.y < 0) particle.y = window.innerHeight;
+
+                const dx = (mouseX - window.innerWidth / 2) * 0.00005;
+                const dy = (mouseY - window.innerHeight / 2) * 0.00005;
+                particle.x -= dx;
+                particle.y -= dy;
+
+                particle.element.style.transform = `translate(${particle.x}px, ${particle.y}px)`;
+            });
+            requestAnimationFrame(animateParticles);
+        }
+
+        animateParticles();
+    </script>
 </body>
 </html>
