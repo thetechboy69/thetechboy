@@ -22,7 +22,6 @@ This list is NOT final and may vary.
 
 - 📱 [TheTechBoy](https://github.com/thetechboy69), for making most part of the website.
 - 🎮 [HeXp](https://github.com/HeXpp), for tidying the project structure, finishing dark mode and improving the aesthetics.
-- 😺 [SzymcioYa](https://github.com/SzymcioYa), for adding extras, cool stuff to the website and helping with getting GitHub working.
 - 🐧 [PinguSurMars](https://github.com/pingusurmars), for fixing little details that no one notices (and other stuff like language-based redirection).
 
 And you, for being part of the community ❤️.
