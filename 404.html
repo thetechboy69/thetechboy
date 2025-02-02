@@ -1,0 +1,73 @@
+
+<!-- ALL CREDITS FOR THE ASSETS GO TO TOBY FOX -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .dog-image {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .error-text {
+            color: #ffffff;
+            font-size: 16px;
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .audio-player {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://thetechboy.net/assets/website/Annoying_Dog_sprite.webp" alt="Annoying Dog" class="dog-image">
+        <div class="error-text">404: Page not found</div>
+    </div>
+
+    <audio id="dogsong" autoplay loop class="audio-player">
+        <source src="https://thetechboy.net/assets/website/Dogsong.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        window.onload = function() {
+            var audio = document.getElementById('dogsong');
+            audio.volume = 1;
+            
+            audio.play().catch(function(error) {
+                console.log("Audio autoplay failed due to browser policy:", error);
+            });
+
+            document.addEventListener('click', function() {
+                audio.play();
+            }, { once: true });
+
+            audio.addEventListener('ended', function() {
+                audio.currentTime = 0;
+                audio.play();
+            });
+        }
+    </script>
+</body>
+</html>
