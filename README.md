@@ -5,4 +5,4 @@
 
 Repo for TTB's Official Website. You can access it [here](https://thetechboy.net).
 
-If you use any of the code please credit the original website (thetechboy.net)
+You can use the code for anything you'd like, just make sure to credit me
