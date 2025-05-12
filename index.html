@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="https://thetechboy.net/assets/styles/styles.css">
 </head>
 <body>
     <div class="background-circle"></div>
@@ -16,12 +16,12 @@
     </div>
     <div class="content">
         <div class="container">
-            <img src="/assets/website/cube.png" alt="Cube" class="cube">
+            <img src="https://thetechboy.net/assets/website/cube.png" alt="Cube" class="cube">
             <div class="ttb-text">TTB</div>
         </div>
         <div class="subtitle">
-            <span>Professional idiot, content creator,</span>
-            <span>full-stack developer and supposed <i class="fab fa-apple"></i> glazer</span>
+            <!--(those who know)-->
+            <span id="mango"></span>
         </div>
         <div class="social-links">
     <a href="https://www.tiktok.com/@ttbtech" target="_blank">
@@ -54,6 +54,29 @@
         const socialLinks = document.querySelector('.social-links');
         const footer = document.querySelector('.footer');
         const backgroundCircle = document.querySelector('.background-circle');
+        
+        // spamton would be proud maybe probably possibly (ily toby pls dont sue me)
+        const deltaruneTomorrowMaybeProbablyNotButWeCanOnlyHope = [
+            "DELTARUNE TOMORROW",
+            "Designed BY The Classics You've Come To Expect! (C)1997",
+            "DON'T YOU WANNA BE A [[Big Shot]]??",
+            "There's nothing wrong. There's NOTHING WRONG. THERE'S NOTHING WRONG.",
+            "DON'T FORGET TO [Like and Subscribe] FOR MORE [Hyperlink Blocked]!",
+            "But nobody came.",
+            "NOW'S YOUR CHANCE TO BE A [[Big Shot]]!!",
+            "I USED TO BE NOTHING BUT THE E_MAIL GUY, NOW I'M THE [[It Burns! Ow! Stop! Help Me! It Burns!]] GUY!",
+            "DO YOU WANNA BE A [Heart] ON A [Chain] FOR YOUR WHOLE LIFE!?",
+            "[Clown]!? NO!!! I FEEL SICK!!!",
+            "[[Unintelligible Laughter]]"
+        ];
+
+
+        function bigshot() {
+            const randomIndex = Math.floor(Math.random() * deltaruneTomorrowMaybeProbablyNotButWeCanOnlyHope.length);
+            document.getElementById('mango').textContent = deltaruneTomorrowMaybeProbablyNotButWeCanOnlyHope[randomIndex];
+        }
+
+        bigshot();
 
         const animations = [cubeImage, ttbText, subtitle, socialLinks];
         content.classList.add('blurred');
