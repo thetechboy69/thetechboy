@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -70,7 +70,9 @@
             "WHAT AN EVENT!! THE CONTESTANTS APPEAR TO BE KILLING ME!!",
             "Who SAYS an old CRT can't learn new tricks!? LOOK!! The 6PM show!? I'll show it at 5!!",
             "H-HEY, ANYONE NOTICED MY HP IS GOING DOWN!? ANYONE!?",
-            "Ratings!? HA! I'll show you CHARISMA! HD's nothing when you got NOSTALGIA!"
+            "Ratings!? HA! I'll show you CHARISMA! HD's nothing when you got NOSTALGIA!",
+            "IT'S! TV! TIMEEEE!!!",
+            "[Press F1 For] HELP"
         ];
 
 
@@ -151,6 +153,15 @@
         }
 
         animateParticles();
+
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'F1') {
+            event.preventDefault(); 
+            window.location.href = '/special'; 
+            }
+        });
+
     </script>
 </body>
 </html>
